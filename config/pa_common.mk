@@ -6,9 +6,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
 		
-# tonyp: add tune script to init.d
+# tonyp: add init.d scripts
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/99tune:system/etc/init.d/99tune 
+    vendor/cm/prebuilt/common/etc/init.d/99tune:system/etc/init.d/99tune \
+	vendor/cm/prebuilt/common/etc/init.d/05tonyp:system/etc/init.d/05tonyp 
 
 # tonyp: add JBTheme
 PRODUCT_COPY_FILES += \

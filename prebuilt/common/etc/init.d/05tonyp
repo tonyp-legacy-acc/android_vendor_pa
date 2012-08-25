@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+# tonyp set recommended minfree + adj values
+echo "0,3,6,10,12,15" > /sys/module/lowmemorykiller/parameters/adj;
+echo "2048,3072,11264,13312,15360,17408" > /sys/module/lowmemorykiller/parameters/minfree;

@@ -5,6 +5,19 @@ PRODUCT_COPY_FILES += \
 # Replace CM9 files
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
+		
+# tonyp: add tune script to init.d
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/99tune:system/etc/init.d/99tune 
+
+# tonyp: add JBTheme
+PRODUCT_COPY_FILES += \
+	vendor/cm/prebuilt/common/apps/cm9.theme.JBstock.apk:system/app/cm9.theme.JBstock.apk 	
+	
+# tonyp: set JBTheme as default
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	persist.sys.themeId=JBstock \
+	persist.sys.themePackageName=cm9.theme.JBstock
 
 ifneq ($(PARANOID_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \

@@ -1,0 +1,16 @@
+#!/system/bin/sh
+L="log -p i -t buttery"
+$L "buttery lagfree script"
+
+echo 0 > /proc/sys/vm/swappiness
+echo 70 > /proc/sys/vm/dirty_ratio
+echo 20000 > /proc/sys/vm/dirty_writeback_centisecs
+echo 20000 > /proc/sys/vm/dirty_expire_centisecs
+echo 50 > /proc/sys/vm/dirty_background_ratio
+setprop cm.buttery.active 1
+
+$L "/proc/sys/vm/swappiness = `cat /proc/sys/vm/swappiness`"
+$L "/proc/sys/vm/dirty_ratio = `cat /proc/sys/vm/dirty_ratio`"
+$L "/proc/sys/vm/dirty_writeback_centisecs = `cat /proc/sys/vm/dirty_writeback_centisecs`"
+$L "/proc/sys/vm/dirty_expire_centisecs = `cat /proc/sys/vm/dirty_expire_centisecs`"
+$L "/proc/sys/vm/dirty_background_ratio = `cat /proc/sys/vm/dirty_background_ratio`"

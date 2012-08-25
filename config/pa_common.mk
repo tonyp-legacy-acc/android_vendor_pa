@@ -13,7 +13,7 @@ PRODUCT_COPY_FILES += \
 
 # tonyp: add JBTheme
 PRODUCT_COPY_FILES += \
-	vendor/cm/prebuilt/common/apps/cm9.theme.JBstock.apk:system/app/cm9.theme.JBstock.apk 	
+	vendor/pa/prebuilt/common/apps/cm9.theme.JBstock.apk:system/app/cm9.theme.JBstock.apk 	
 	
 # tonyp: set JBTheme as default
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

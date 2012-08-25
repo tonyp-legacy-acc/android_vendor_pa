@@ -47,3 +47,9 @@ PA_VERSION := $(CM_VERSION)-$(TARGET_PRODUCT)-$(PA_VERSION_MAJOR).$(PA_VERSION_M
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.pa.version=$(PA_VERSION)
 # ro.cm.version=$(CM_VERSION)
+
+# GooManager setup
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=tonyp \
+	ro.goo.rom=ParanoidAndroid-ICS-$(TARGET_PRODUCT) \
+	ro.goo.version=$(shell date +%s)

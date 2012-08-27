@@ -6,7 +6,7 @@
 %rom_tablet_base=128
 %rom_phone_base=240
 %rom_mid_base=190
-%rom_systemui_dpi=%rom_mid_base
+%rom_systemui_dpi=190
 %screen_default_width=320
 %screen_default_height=508
 %screen_default_layout=34
@@ -19,7 +19,7 @@
 %user_default_mode=1
 %system_default_dpi=%rom_mid_base
 %user_default_dpi=%rom_mid_base
-android.dpi=0
+android.dpi=190
 com.android.systemui.dpi=%rom_systemui_dpi
 com.android.systemui.mode=1
 

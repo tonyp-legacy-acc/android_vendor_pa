@@ -57,9 +57,9 @@ PRODUCT_COPY_FILES += \
 CM_RELEASE := true
 CM_BUILD := $(BOARD)
 
-PA_VERSION_MAJOR = 2
-PA_VERSION_MINOR = 0
-PA_VERSION_MAINTENANCE = 0
+PA_VERSION_MAJOR = 1
+PA_VERSION_MINOR = 9
+PA_VERSION_MAINTENANCE = 97
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
@@ -67,11 +67,10 @@ VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
 PA_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.modversion=$(PA_VERSION) \
   ro.pa.version=$(VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.goo.developerid=paranoidandroid \
+  ro.goo.developerid=tonyp \
   ro.goo.board=$(BOARD) \
   ro.goo.rom=$(TARGET_PRODUCT) \
   ro.goo.version=$(shell date +%s)

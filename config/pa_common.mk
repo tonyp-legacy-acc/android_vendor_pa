@@ -21,7 +21,7 @@ endif
 # ParanoidAndroid Packages
 PRODUCT_PACKAGES += \
     ParanoidPreferences  \
-	PAWallpapers
+	ParanoidWallpapers
 
 # CyanogenMod Packages
 PRODUCT_PACKAGES += \

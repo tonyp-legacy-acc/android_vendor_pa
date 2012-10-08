@@ -6,7 +6,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Replace CM files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
 	vendor/pa/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk \
 	vendor/pa/prebuilt/common/apk/PDroid.apk:system/app/PDroid.apk \

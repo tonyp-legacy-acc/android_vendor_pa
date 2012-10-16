@@ -23,3 +23,4 @@ add_lunch_combo pa_i815-userdebug
 add_lunch_combo pa_captivatemtd-userdebug
 add_lunch_combo pa_p990-userdebug
 add_lunch_combo pa_p999-userdebug
+add_lunch_combo pa_mint-userdebug

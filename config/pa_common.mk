@@ -22,8 +22,8 @@ endif
     
 # ParanoidAndroid Packages
 PRODUCT_PACKAGES += \
-    ParanoidPreferences  \
-	ParanoidWallpapers
+    ParanoidPreferences \
+    ParanoidWallpapers
 
 # device common prebuilts
 ifneq ($(DEVICE_COMMON),)
@@ -57,7 +57,7 @@ CM_BUILD := $(BOARD)
 
 PA_VERSION_MAJOR = 2
 PA_VERSION_MINOR = 2
-PA_VERSION_MAINTENANCE = 1
+PA_VERSION_MAINTENANCE = 2
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 

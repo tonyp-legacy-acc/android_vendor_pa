@@ -7,10 +7,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Replace CM files
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
-	vendor/pa/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk \
-	vendor/pa/prebuilt/common/apk/PDroid.apk:system/app/PDroid.apk \
-	vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
-	vendor/pa/prebuilt/common/xbin/su:system/xbin/su
+    vendor/pa/prebuilt/common/apk/PDroid.apk:system/app/PDroid.apk \
+    vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
+    vendor/pa/prebuilt/common/apk/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk \
+    vendor/pa/prebuilt/common/xbin/su:system/xbin/su
 
 ifneq ($(PARANOID_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \
@@ -65,6 +65,7 @@ VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
 PA_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 PRODUCT_PROPERTY_OVERRIDES += \
+  ro.pa.family=$(PA_CONF_SOURCE) \
   ro.pa.version=$(VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \

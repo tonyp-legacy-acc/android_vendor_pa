@@ -24,3 +24,4 @@ add_lunch_combo pa_captivatemtd-userdebug
 add_lunch_combo pa_p990-userdebug
 add_lunch_combo pa_p999-userdebug
 add_lunch_combo pa_mint-userdebug
+add_lunch_combo pa_tf700t-userdebug

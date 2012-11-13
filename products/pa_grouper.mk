@@ -14,6 +14,9 @@ include vendor/pa/config/pa_common.mk
 PRODUCT_COPY_FILES += \
   vendor/pa/proprietary/grouper/bcm4330.hcd:system/etc/firmware/bcm4330.hcd
 
+# Inherit CM device configuration
+$(call inherit-product, device/asus/grouper/cm.mk)
+
 PRODUCT_NAME := pa_grouper
 
 GET_VENDOR_PROPS := $(shell vendor/pa/tools/getvendorprops.py $(PRODUCT_NAME))

@@ -77,7 +77,7 @@ PA_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d-%H%M%S)-$(UTA
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(PA_VERSION) \
   ro.pa.family=$(PA_CONF_SOURCE) \
-  ro.pa.version=$(VERSION)-$(shell date -u +%Y%m%d-%H%M%S)-$(UTACKA_VERSION)
+  ro.pa.version=$(VERSION)-$(UTACKA_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.developerid=Utacka \

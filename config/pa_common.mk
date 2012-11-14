@@ -69,19 +69,18 @@ PA_VERSION_MAINTENANCE = 4
 
 TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
 
-UTACKA_AUTHOR := Utacka
 UTACKA_VERSION := Utacka
 UTACKA_ANDROID := JB
 VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
-PA_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d-%H%M%S)-$(UTACKA_VERSION)
+PA_VERSION := $(TARGET_PRODUCT)-$(shell date -u +%Y%m%d-%H%M%S)-$(UTACKA_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(PA_VERSION) \
   ro.pa.family=$(PA_CONF_SOURCE) \
-  ro.pa.version=$(VERSION)-$(UTACKA_VERSION)
+  ro.pa.version=$(VERSION)-$(shell date -u +%Y%m%d-%H%M%S)-$(UTACKA_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.goo.developerid=$(UTACKA_AUTHOR) \
+  ro.goo.developerid=Utacka \
   ro.goo.board=$(BOARD) \
   ro.goo.rom=$(TARGET_PRODUCT)-$(UTACKA_ANDROID)-$(UTACKA_VERSION) \
   ro.goo.version=$(shell date +%s)

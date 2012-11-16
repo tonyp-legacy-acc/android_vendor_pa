@@ -5,10 +5,7 @@ ifeq (pa_p930,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_p930
-
-# Build paprefs from sources
-PREFS_FROM_SOURCE := false
+OVERLAY_TARGET := pa_xhdpi
 
 # include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk

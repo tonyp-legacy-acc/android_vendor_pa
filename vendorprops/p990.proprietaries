@@ -1,8 +1,0 @@
-[
-    {
-        "account":      "TheMuppets",
-        "repository":   "proprietary_vendor_lge",
-        "target_path":  "vendor/lge",
-        "revision":     "jellybean"
-    }
-]

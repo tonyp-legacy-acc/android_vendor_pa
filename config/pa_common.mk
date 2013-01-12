@@ -83,5 +83,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.goo.developerid=tonyp \
   ro.goo.board=$(BOARD) \
-  ro.goo.rom=$(TARGET_PRODUCT)-$(TONYP_ANDROID)-$(TONYP_VERSION) \
   ro.goo.version=$(shell date +%s)

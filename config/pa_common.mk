@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
     vendor/pa/prebuilt/common/apk/PDroid.apk:system/app/PDroid.apk \
     vendor/pa/prebuilt/common/apk/PerformanceControl.apk:system/app/PerformanceControl.apk \
+    vendor/pa/prebuilt/common/apk/Lumberjack.apk:system/app/Lumberjack.apk \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su
 
 # Exclude prebuilt paprefs from builds if the flag is set

@@ -80,7 +80,6 @@ PA_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(TONYP_BUILD_NR)-$(shell date +%Y%m%
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(PA_VERSION) \
-  ro.pa.release=$(PA_RELEASE) \
   ro.pa.family=$(PA_CONF_SOURCE) \
   ro.pa.version=$(VERSION)-$(TONYP_BUILD_NR)-$(TONYP_VERSION)
 

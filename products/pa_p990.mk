@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_i9100,$(TARGET_PRODUCT))
+ifeq (pa_p990,$(TARGET_PRODUCT))
 
 # Define PA bootanimation size
 PARANOID_BOOTANIMATION_NAME := HDPI

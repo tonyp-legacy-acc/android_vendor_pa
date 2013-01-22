@@ -21,13 +21,6 @@
         "revision":     "tony_aospa"
     },
     {
-        "remote":       "private",
-        "account":      "tonypp",
-        "repository":   "private-penguin-party",
-        "target_path":  "kernel/lge/star",
-        "revision":     "kk-new-bl"
-    },
-    {
         "remote":       "github",
         "account":      "tonypp",
         "repository":   "android_vendor_cm",

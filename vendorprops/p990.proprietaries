@@ -1,0 +1,37 @@
+[
+    {
+        "remote":       "github",
+        "account":      "tonypp",
+        "repository":   "proprietary_vendor_lge",
+        "target_path":  "vendor/lge",
+        "revision":     "tony_pacm"
+    },
+    {
+        "remote":       "github",
+        "account":      "tonypp",
+        "repository":   "android_device_lge_star-common",
+        "target_path":  "device/lge/star-common",
+        "revision":     "tony_aospa"
+    },
+    {
+        "remote":       "github",
+        "account":      "tonypp",
+        "repository":   "android_device_lge_p990",
+        "target_path":  "device/lge/p990",
+        "revision":     "tony_aospa"
+    },
+    {
+        "remote":       "private",
+        "account":      "tonypp",
+        "repository":   "private-penguin-party",
+        "target_path":  "kernel/lge/star",
+        "revision":     "kk-new-bl"
+    },
+    {
+        "remote":       "github",
+        "account":      "tonypp",
+        "repository":   "android_vendor_cm",
+        "target_path":  "vendor/cm",
+        "revision":     "tony_pacm"
+    }
+]

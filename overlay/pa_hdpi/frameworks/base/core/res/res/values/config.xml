@@ -21,10 +21,5 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>21</item>
     </integer-array>
-    
-    <!-- enable animations -->
-    <integer name="window_animation_scale">1</integer>
-    <integer name="transition_animation_scale">.5</integer>
-    <integer name="animator_duration_scale">.5</integer>
-    
+
 </resources>

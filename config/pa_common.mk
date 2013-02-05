@@ -18,6 +18,20 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/xbin/iwlist:system/xbin/iwlist \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su
 
+# Add Xperia Launcher
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/common/apk/Home.apk:system/app/Home.apk \
+    vendor/pa/prebuilt/common/etc/permissions/com.sonyericsson.android.media.sols.xml:system/etc/permissions/com.sonyericsson.android.media.sols.xml \
+    vendor/pa/prebuilt/common/etc/permissions/com.sonyericsson.appextensions.xml:system/etc/permissions/com.sonyericsson.appextensions.xml \
+    vendor/pa/prebuilt/common/etc/permissions/com.sonyericsson.facebook.proxy_1.xml:system/etc/permissions/com.sonyericsson.facebook.proxy_1.xml \
+    vendor/pa/prebuilt/common/etc/permissions/com.sonyericsson.themeapis.xml:system/etc/permissions/com.sonyericsson.themeapis.xml \
+    vendor/pa/prebuilt/common/etc/permissions/com.sonyericsson.uxpres.xml:system/etc/permissions/com.sonyericsson.uxpres.xml \
+    vendor/pa/prebuilt/common/framework/com.sonyericsson.android.media.sols.jar:system/framework/com.sonyericsson.android.media.sols.jar \
+    vendor/pa/prebuilt/common/framework/com.sonyericsson.appextensions.jar:system/framework/com.sonyericsson.appextensions.jar \
+    vendor/pa/prebuilt/common/framework/com.sonyericsson.cameraextension_impl.jar:system/framework/com.sonyericsson.cameraextension_impl.jar \
+    vendor/pa/prebuilt/common/framework/com.sonyericsson.facebook.proxy_1_impl.jar:system/framework/com.sonyericsson.facebook.proxy_1_impl.jar \
+    vendor/pa/prebuilt/common/framework/com.sonyericsson.uxpres.jar:system/framework/com.sonyericsson.uxpres.jar
+
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
     PRODUCT_COPY_FILES += \

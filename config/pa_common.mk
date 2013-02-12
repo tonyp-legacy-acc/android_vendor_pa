@@ -35,6 +35,8 @@ PRODUCT_COPY_FILES += \
 # Add Wallpapers
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/WallpaperPicker.apk:system/app/WallpaperPicker.apk \
+    vendor/pa/prebuilt/common/etc/wallpapers/penguins.png:system/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers/penguins.png \
+    vendor/pa/prebuilt/common/etc/wallpapers/penguins_small.png:system/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers/penguins_small.png \
     vendor/pa/prebuilt/common/etc/wallpapers/SXZ_black.png:system/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers/SXZ_black.png \
     vendor/pa/prebuilt/common/etc/wallpapers/SXZ_black_small.png:system/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers/SXZ_black_small.png
 

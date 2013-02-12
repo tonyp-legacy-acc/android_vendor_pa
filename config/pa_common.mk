@@ -32,6 +32,12 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/framework/com.sonyericsson.facebook.proxy_1_impl.jar:system/framework/com.sonyericsson.facebook.proxy_1_impl.jar \
     vendor/pa/prebuilt/common/framework/com.sonyericsson.uxpres.jar:system/framework/com.sonyericsson.uxpres.jar
 
+# Add Wallpapers
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/common/apk/WallpaperPicker.apk:system/app/WallpaperPicker.apk \
+    vendor/pa/prebuilt/common/etc/wallpapers/SXZ_black.png:system/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers/SXZ_black.png \
+    vendor/pa/prebuilt/common/etc/wallpapers/SXZ_black_small.png:system/etc/customization/content/com/sonyericsson/wallpaperpicker/wallpapers/SXZ_black_small.png
+
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
     PRODUCT_COPY_FILES += \

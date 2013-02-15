@@ -64,7 +64,8 @@ endif
 
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
-    vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
+    vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf \
+    vendor/pa/prebuilt/55-tonyp.sh:system/addon.d/55-tonyp.sh
 
 # Add CM release version
 CM_RELEASE := true

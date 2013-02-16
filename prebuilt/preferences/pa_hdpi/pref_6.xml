@@ -10,9 +10,17 @@
         <setting type="Hybrid" target="com.android.systemui.layout" value="720"/>
         <setting type="Android" target="max_notification_icons" value="5"/>
         <setting type="Android" target="nav_bar_status" value="0"/>
-        <setting type="Hybrid" target="com.sonyericsson.home.dpi" value="240"/>
-        <setting type="Hybrid" target="com.sonyericsson.home.layout" value="360"/>
+        <setting type="Hybrid" target="com.paranoid.preferences.dpi" value="160"/>
+        <setting type="Hybrid" target="com.paranoid.preferences.layout" value="720"/>
+        <setting type="Hybrid" target="com.android.settings.dpi" value="160"/>
+        <setting type="Hybrid" target="com.android.settings.layout" value="720"/>
+        <setting type="Hybrid" target="com.android.browser.dpi" value="160"/>
+        <setting type="Hybrid" target="com.android.browser.layout" value="720"/>
+        <setting type="Hybrid" target="com.google.android.gm.dpi" value="160"/>
+        <setting type="Hybrid" target="com.google.android.gm.layout" value="720"/>
         <setting type="Hybrid" target="com.android.vending.dpi" value="240"/>
         <setting type="Hybrid" target="com.android.vending.layout" value="360"/>
+        <setting type="Hybrid" target="com.sonyericsson.home.dpi" value="240"/>
+        <setting type="Hybrid" target="com.sonyericsson.home.layout" value="360"/>
 
 </property>

@@ -7,9 +7,17 @@
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="160"/>
         <setting type="Hybrid" target="com.android.systemui.layout" value="600"/>
-        <setting type="Hybrid" target="com.sonyericsson.home.dpi" value="240"/>
-        <setting type="Hybrid" target="com.sonyericsson.home.layout" value="360"/>
+        <setting type="Hybrid" target="com.paranoid.preferences.dpi" value="160"/>
+        <setting type="Hybrid" target="com.paranoid.preferences.layout" value="600"/>
+        <setting type="Hybrid" target="com.android.settings.dpi" value="160"/>
+        <setting type="Hybrid" target="com.android.settings.layout" value="600"/>
+        <setting type="Hybrid" target="com.android.browser.dpi" value="160"/>
+        <setting type="Hybrid" target="com.android.browser.layout" value="600"/>
+        <setting type="Hybrid" target="com.google.android.gm.dpi" value="160"/>
+        <setting type="Hybrid" target="com.google.android.gm.layout" value="600"/>
         <setting type="Hybrid" target="com.android.vending.dpi" value="240"/>
         <setting type="Hybrid" target="com.android.vending.layout" value="360"/>
+        <setting type="Hybrid" target="com.sonyericsson.home.dpi" value="240"/>
+        <setting type="Hybrid" target="com.sonyericsson.home.layout" value="360"/>
 
 </property>

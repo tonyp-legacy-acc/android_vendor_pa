@@ -10,7 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
     vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
     vendor/pa/prebuilt/common/apk/PDroid.apk:system/app/PDroid.apk \
-    vendor/pa/prebuilt/common/apk/PerformanceControl.apk:system/app/PerformanceControl.apk \
     vendor/pa/prebuilt/common/apk/KowalskiManager.apk:system/app/KowalskiManager.apk \
     vendor/pa/prebuilt/common/apk/Lumberjack.apk:system/app/Lumberjack.apk \
     vendor/pa/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk \
@@ -27,6 +26,9 @@ else
     PRODUCT_PACKAGES += \
         ParanoidPreferences
 endif
+
+PRODUCT_PACKAGES += \
+    PerformanceControl
 
 ifneq ($(PARANOID_BOOTANIMATION_NAME),)
     PRODUCT_COPY_FILES += \

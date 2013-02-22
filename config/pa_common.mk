@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/KowalskiManager.apk:system/app/KowalskiManager.apk \
     vendor/pa/prebuilt/common/apk/Lumberjack.apk:system/app/Lumberjack.apk \
     vendor/pa/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk \
+    vendor/pa/prebuilt/common/xbin/alsa_amixer:system/xbin/alsa_amixer \
     vendor/pa/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/pa/prebuilt/common/xbin/iwlist:system/xbin/iwlist \
     vendor/pa/prebuilt/common/xbin/su:system/xbin/su

@@ -4,19 +4,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.notification_sound=Proxima.ogg \
   ro.config.alarm_alert=Cesium.ogg
 
+# Embed Superuser
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
+
 # Replace CM files
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
-    vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
     vendor/pa/prebuilt/common/apk/PDroid.apk:system/app/PDroid.apk \
     vendor/pa/prebuilt/common/apk/KowalskiManager.apk:system/app/KowalskiManager.apk \
     vendor/pa/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk \
     vendor/pa/prebuilt/common/apk/Syslog.apk:system/app/Syslog.apk \
     vendor/pa/prebuilt/common/xbin/alsa_amixer:system/xbin/alsa_amixer \
     vendor/pa/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
-    vendor/pa/prebuilt/common/xbin/iwlist:system/xbin/iwlist \
-    vendor/pa/prebuilt/common/xbin/su:system/xbin/su
+    vendor/pa/prebuilt/common/xbin/iwlist:system/xbin/iwlist
 
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)

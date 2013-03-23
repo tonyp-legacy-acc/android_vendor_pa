@@ -43,8 +43,7 @@ endif
 
 # ParanoidAndroid common packages
 PRODUCT_PACKAGES += \
-    ParanoidWallpapers \
-    Effem
+    ParanoidWallpapers
 
 # device common prebuilts
 ifneq ($(DEVICE_COMMON),)

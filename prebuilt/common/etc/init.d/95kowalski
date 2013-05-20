@@ -1,0 +1,39 @@
+#!/system/bin/sh
+
+# Alter the kernel auto-brightness table
+# The values on the left are the LUX results from the light sensor
+# The values on the right are the corresponding screen brightness in ALC
+
+LUX_0=9
+LUX_50=10
+LUX_100=12
+LUX_130=13
+LUX_160=14
+LUX_200=16
+LUX_250=18
+LUX_300=19
+LUX_400=21
+LUX_500=23
+LUX_650=25
+LUX_800=28
+LUX_1000=32
+LUX_1400=39
+LUX_2000=43
+LUX_3000=60
+
+##### Don't touch anything below this line #####
+
+# Set the auto brightness table at boot
+echo $LUX_0 $LUX_50 $LUX_100 $LUX_130 $LUX_160 $LUX_200 $LUX_250 \
+$LUX_300 $LUX_400 $LUX_500 $LUX_650 $LUX_800 $LUX_1000 $LUX_1400 \
+$LUX_2000 $LUX_3000 > /sys/class/backlight/aat2870-backlight/device/alc_table
+
+# Enable the ZRAM kernel module
+insmod /system/lib/modules/zram.ko
+
+# Enable the sched multi-core power savings
+# 0 = No power saving load balance
+# 1 = Fill one thread/core/package first for long running threads
+# 2 = Also bias task wakeups to semi-idle cpu package for power savings
+echo 2 > /sys/devices/system/cpu/sched_mc_power_savings
+

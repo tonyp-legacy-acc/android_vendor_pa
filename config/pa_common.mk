@@ -16,6 +16,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/apk/KowalskiManager.apk:system/app/KowalskiManager.apk \
     vendor/pa/prebuilt/common/apk/BarcodeScanner.apk:system/app/BarcodeScanner.apk \
     vendor/pa/prebuilt/common/apk/Syslog.apk:system/app/Syslog.apk \
+    vendor/pa/prebuilt/common/etc/init.d/95kowalski:system/etc/init.d/95kowalski \
     vendor/pa/prebuilt/common/xbin/alsa_amixer:system/xbin/alsa_amixer \
     vendor/pa/prebuilt/common/xbin/iwconfig:system/xbin/iwconfig \
     vendor/pa/prebuilt/common/xbin/iwlist:system/xbin/iwlist
